@@ -1056,53 +1056,15 @@ body {
 
 <div class="mensaje">
 
-    <h1 id="tituloMensaje">
+    <h1>
         🌻 Para alguien especial 🌻
     </h1>
 
-    <p id="textoMensaje">
+    <p>
         Que nunca te falten razones para sonreír.
     </p>
 
 </div>
-
-/* =====================================================
-   PERSONALIZACIÓN SEGÚN EL ENLACE
-===================================================== */
-
-const parametros = new URLSearchParams(window.location.search);
-
-const para = parametros.get("para");
-
-const mensajes = {
-
-    rocio: {
-        titulo: "🌻 Para ti, Rocío 🌻",
-        texto: "Gracias por llenar de luz los días de quienes te quieren."
-    },
-
-    juan: {
-        titulo: "🌻 Para ti, Juan 🌻",
-        texto: "Que nunca te falten razones para sonreír."
-    },
-
-    ana: {
-        titulo: "🌻 Para ti, Ana 🌻",
-        texto: "Que siempre encuentres un motivo para sonreír."
-    }
-
-};
-
-
-if (para && mensajes[para.toLowerCase()]) {
-
-    document.getElementById("tituloMensaje").textContent =
-        mensajes[para.toLowerCase()].titulo;
-
-    document.getElementById("textoMensaje").textContent =
-        mensajes[para.toLowerCase()].texto;
-
-}
 
 <script>
 
